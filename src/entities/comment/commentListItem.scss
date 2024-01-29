@@ -1,0 +1,28 @@
+.comment {
+    height: 11em;
+    padding: 0.5em;
+    margin: 1em;
+    transition: all .25s linear;
+    box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.4);
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &__name{
+        width:100%;
+        font-size:2em;
+        font-weight:700;
+    }
+    &__body{  
+        height: 3.6em;
+        max-height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        word-wrap: break-word,
+      
+    }
+    &:hover{
+        box-shadow: -1px 10px 29px 0px rgba(0,0,0,0.8);
+    }
+}
+
