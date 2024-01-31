@@ -60,9 +60,9 @@ export default function InfiniteList(params: InfiniteListProps) {
 
   return (
     <div style={{ height: containerHeight, overflowY: "scroll" }} ref={listRef}>
-      {items?.map((itemData: object, i: number) => {
+      {items?.map((itemData: { id: number }, i: number) => {
         return (
-          <div style={{ height: rowHeight }}>
+          <div style={{ height: rowHeight }} key={itemData!.id}>
             {i >= firstVisibleIndex &&
               i <= lastVisibleIndex &&
               createRowElement(itemData)}{" "}
